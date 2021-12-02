@@ -23,7 +23,7 @@ def chunk_content(content, chunk_size=3) -> [[]]:
     start_pos = 0
 
     while start_pos < len(content)-(chunk_size - 1):
-        chunk_list.append((content[start_pos], content[start_pos + 1], content[start_pos + 2]))
+        chunk_list.append([content[start_pos + i] for i in range(chunk_size)])
         start_pos += 1
     return chunk_list
 
