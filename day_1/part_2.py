@@ -21,10 +21,9 @@
 # increases from the previous sum.
 # So, compare A with B, then compare B with C, then C with D, and so on.
 # Stop when there aren't enough measurements left to create a new three-measurement sum.
-#
-# Use the same input file as part 1
 
-from day_1.lib.functions import read_input_as_list, chunk_content, get_increase_count
+
+from day_1.functions import read_input_as_list, chunk_content, get_increase_count
 
 input_list = read_input_as_list()
 chunked_content = chunk_content(input_list)

@@ -32,12 +32,13 @@ class Submarine:
         self.horizontal = 0
         self.depth = 0
 
+    @staticmethod
+    def read_instructions():
+        return open('./input/input.txt').read().splitlines()
+
     def process_instructions(self):
         for instruction in self.read_instructions():
             self.move(instruction)
-
-    def read_instructions(self):
-        return [line.strip() for line in self.instructions.readlines()]
 
     def move(self, instruction: str):
         direction, distance = instruction.split(" ")

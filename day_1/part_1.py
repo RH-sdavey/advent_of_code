@@ -12,7 +12,7 @@
 # 263 (increased)
 # In this example, there are 7 measurements that are larger than the previous measurement.
 # Find the number of increases for "..\input\input.txt"
-from day_1.lib.functions import read_input_as_list, get_increase_count
+from day_1.functions import read_input_as_list, get_increase_count
 
 input_list = read_input_as_list()
 print(get_increase_count(input_list))  # ---> 1448
